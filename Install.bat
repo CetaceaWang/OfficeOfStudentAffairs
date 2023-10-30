@@ -1,0 +1,3 @@
+@echo off
+C:\xampp\php\php.exe .\Copy.php
+set /p DUMMY=«ö Enter ÁäÄ~Äò... Press Enter To Continue...
