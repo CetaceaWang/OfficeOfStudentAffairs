@@ -5,10 +5,11 @@ $mysqli = new mysqli($DB_SERVER,$DB_LOGIN,$DB_PASSWORD,$DB_NAME);
 if ($mysqli->connect_errno) {echo "連接資料庫失敗: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;exit();}
 if (!$mysqli->set_charset("utf8")) {printf("資料庫設定無法設定utf8編碼: %s\r\n", $mysqli->error);exit();}
 $main=
-'<table border="1"> <form method="POST" action="ddscsv.php"> 
+'<table border="1">  
   <tr bgcolor="#00CCFF">
-  <td><p><input type="submit" value="下載csv" name="B1"></p></td>
-   </tr></form>
+  <form method="POST" action="ddscsv.php"><td><p><input type="submit" value="下載csv" name="B1"></p></td></form>
+  <form method="POST" action="ExportToCsv.php"><td><p><input type="submit" value="下載班級csv" name="B2"></p></td></form>
+   </tr>
     ';
 $main.=
 	'</table><table border="1"><tr bgcolor="#FF99FF">

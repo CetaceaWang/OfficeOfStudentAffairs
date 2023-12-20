@@ -1,4 +1,5 @@
 <?php
+//這個檔案僅能用在執行php的伺服器上讀取php檔案內容，目前在github上沒作用
 $Password="ef1e539726fbade3b40a0ceab8d4a4af";
 $main='<form method="POST" action="'.$_SERVER['PHP_SELF'].'"> 
 <input type="hidden" name="filename">
